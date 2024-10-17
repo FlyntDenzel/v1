@@ -39,12 +39,12 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 Light Mode => 
 
-Background - Gray - 60 %
-Buttons - Blue - 30 % 
+Background - Gray(bg-[#f3f0f0]) - 60 %
+Buttons - Blue(bg-teal-500) - 30 % 
 Typography - Black - 10 %
 
 Dark Mode =>
 
-Background - Dark Gray 60 %
-Buttons - Blue - 30 %
-Typography - White - 10 %
+Background - Dark Gray(bg-[#152731ec]) - 60 %
+Buttons - Blue(bg-teal-500) - 30 %
+Typography - White(text-[#f3f0f0]) - 10 %

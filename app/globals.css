@@ -26,6 +26,6 @@ body {
 
 @layer components {
   .links {
-    @apply hover:bg-[#61e4d9] transition-colors duration-300 rounded-xl w-full p-1 px-3 text-center hover:text-white focus:bg-[#61e4d9] focus:text-white font-bold flex items-center gap-2;
+    @apply hover:bg-teal-500 transition-colors duration-300 hover:text-[#f3f0f0] rounded-xl w-full p-1 px-3 text-center focus:bg-teal-500 focus:text-white font-bold flex items-center gap-2 dark:hover:text-[#152731ec] dark:focus:text-[#152731ec];
   }
 }

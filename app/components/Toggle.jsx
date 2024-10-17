@@ -1,18 +1,14 @@
 "use client";
+import { FaMoon, FaSun } from "react-icons/fa6";
 
-import { useState, useEffect } from "react";
-
-import { FaSun } from "react-icons/fa6";
-import { FaMoon } from "react-icons/fa6";
+import { useEffect, useState } from "react";
 
 const Toggle = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
     const theme = localStorage.getItem("theme");
-    if (theme === "dark") {
-      setDarkMode(true);
-    }
+    if (theme === "dark") setDarkMode(false);
   }, []);
 
   useEffect(() => {
@@ -24,14 +20,18 @@ const Toggle = () => {
       localStorage.setItem("theme", "light");
     }
   }, [darkMode]);
+
   return (
     <div
-      className="flex items-center dark:bg-[#111B21] rounded-full shadow-md p-2 cursor-pointer w-[15]px h-8"
+      className="relative w-16 h-8 flex items-center dark:bg-gray-900 bg-teal-500 cursor-pointer rounded-full p-1"
       onClick={() => setDarkMode(!darkMode)}
     >
-      <FaSun className="text-gray-200" />
-      <FaMoon className="text-[#111B21]" />
-      <div className="bg-white dark:bg-[#111B21] w-full h-6 rounded-full shadow-md transform transition-colors duration-200"></div>
+      <FaMoon className="text-[#f3f0f0]" size={22} />
+      <div
+        className="absolute bg-white dark:bg-[#293245] w-6 h-6 rounded-full shadow-md transform transition-all ease-in-out duration-300"
+        style={darkMode ? { left: "2px" } : { right: "2px" }}
+      ></div>
+      <FaSun className="ml-auto text-[#152731ec]" size={23}/>
     </div>
   );
 };
