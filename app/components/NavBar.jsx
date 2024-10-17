@@ -17,29 +17,29 @@ const NavBar = () => {
       <section className="flex-col rounded-md h-1/4 items-center flex justify-center">
         <BsPerson
           size={120}
-          className="border p-2 rounded-full border-[#152731ec]"
+          className="cursor-pointer border p-2 rounded-full border-[#152731ec]"
         />
         <h1 className="text-center">@FlyntDenzel</h1>
       </section>
       <section className="rounded-md h-1/2 flex flex-col items-center justify-evenly p-3 ">
-        <Link href={``} className="links">
+        <Link href={`/`} className="links">
           <BsNewspaper />
           News Feed
         </Link>
-        <Link href={``} className="links">
+        <Link href={`Messages`} className="links">
           {/* <FaFacebookMessenger /> */}
           <BsChatFill />
           Messages
         </Link>
-        <Link href={``} className="links">
+        <Link href={`Friends`} className="links">
           <FaUserGroup />
           Friends
         </Link>
-        <Link href={`signup`} className="links">
+        <Link href={`Profile`} className="links">
           <FaUser />
           Profile
         </Link>
-        <Link href={``} className="links ">
+        <Link href={`Settings`} className="links ">
           <FaGear />
           Settings
         </Link>
