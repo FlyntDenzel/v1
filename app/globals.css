@@ -23,3 +23,9 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer components {
+  .links {
+    @apply hover:bg-[#61e4d9] transition-colors duration-300 rounded-xl w-full p-1 px-3 text-center hover:text-white focus:bg-[#61e4d9] focus:text-white font-bold flex items-center gap-2;
+  }
+}
